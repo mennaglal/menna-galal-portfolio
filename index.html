@@ -148,7 +148,7 @@
         <div class="timeline">
           <article class="timeline-item reveal">
             <div class="timeline-date">APR 2023 — OCT 2026</div>
-            <div class="timeline-content"><div class="timeline-top"><div><h3>Full Stack Developer</h3><p class="company">Bluezone Web Company</p></div><span class="timeline-badge">15+ COMMERCIAL PROJECTS</span></div>
+            <div class="timeline-content"><div class="timeline-top"><div><h3>Full Stack Developer</h3><p class="company">Bluezone Web Company</p></div><span class="timeline-badge">20+ COMMERCIAL PROJECTS</span></div>
               <ul><li>Contributed to commercial e-commerce platforms and business applications, including projects delivered across admin dashboards, customer-facing websites, and backend APIs.</li><li>Developed Laravel features, REST APIs, authentication flows, authorization rules, and database workflows.</li><li>Integrated payment gateways and third-party services; implemented multilingual support and push notifications.</li><li>Improved application performance with caching, Redis, queues, indexing, and query optimization where appropriate.</li><li>Owned feature delivery, bug fixing, deployment, maintenance, and production troubleshooting across backend and frontend tasks.</li></ul>
             </div>
           </article>
@@ -172,6 +172,7 @@
               </div>
 
               <div class="projects-grid">
+
 
                   <!-- 01 - CommerceHub -->
                   <article class="project-card project-commercehub project-wide reveal">
@@ -244,67 +245,94 @@
                           </div>
 
                           <p>
-                              A multi-vendor e-commerce platform with a centralized admin dashboard,
-                              vendor lifecycle management, product and inventory workflows,
-                              order processing, returns, coupons, and customer-facing APIs.
-                              The backend is structured around clear business services
-                              and transaction-safe operations.
+                              A multi-vendor e-commerce platform built with Laravel,
+                              featuring centralized administration, vendor management,
+                              product and inventory workflows, order processing,
+                              returns, and customer-facing REST APIs.
+
+                              The backend follows a service-oriented architecture,
+                              with a strong focus on data consistency, maintainability,
+                              and reliable business operations.
                           </p>
 
-                          <ul class="project-highlights">
-                              <li>
-                                  Admin management for vendors, products, orders, returns,
-                                  coupons, roles, and permissions using Spatie.
-                              </li>
+                          <div class="commercehub-architecture">
+                              <span>CORE BUSINESS MODULES</span>
 
-                              <li>
-                                  Vendor application lifecycle, including review,
-                                  approval, rejection, and suspension.
-                              </li>
+                              <div class="project-highlights">
+                                  <ul>
+                                      <li>
+                                          <strong>Admin & Access Management:</strong>
+                                          Centralized management of vendors, products,
+                                          orders, returns, coupons, roles, and permissions
+                                          using Spatie Laravel Permission.
+                                      </li>
 
-                              <li>
-                                  Product variants, attributes, pricing, discounts,
-                                  and inventory management.
-                              </li>
+                                      <li>
+                                          <strong>Vendor Management:</strong>
+                                          Complete vendor application lifecycle,
+                                          including submission, review, approval,
+                                          rejection, and suspension.
+                                      </li>
 
-                              <li>
-                                  Order workflows using database transactions and row-level
-                                  locking to protect stock allocation and order consistency.
-                              </li>
+                                      <li>
+                                          <strong>Products & Inventory:</strong>
+                                          Product variants, attributes, pricing,
+                                          discounts, stock tracking, and vendor
+                                          product submission workflows.
+                                      </li>
 
-                              <li>
-                                  Partial return handling, refundable amount calculations,
-                                  status transitions, and inventory restocking.
-                              </li>
+                                      <li>
+                                          <strong>Order Processing:</strong>
+                                          Transaction-safe order workflows using
+                                          database transactions and row-level locking
+                                          to protect stock allocation and data consistency.
+                                      </li>
 
-                              <li>
-                                  Coupon rules, category-specific discounts, blogger
-                                  commission fields, and currency/location management.
-                              </li>
+                                      <li>
+                                          <strong>Returns & Refunds:</strong>
+                                          Partial return handling, refundable amount
+                                          calculations, return status transitions,
+                                          and inventory restocking.
+                                      </li>
 
-                              <li>
-                                  Queued in-app and Firebase push notifications,
-                                  including device-token registration and management.
-                              </li>
+                                      <li>
+                                          <strong>Business Operations:</strong>
+                                          Flexible coupon rules, category-specific
+                                          discounts, blogger commission fields,
+                                          and currency and location management.
+                                      </li>
 
-                              <li>
-                                  Customer API with authentication, profile management,
-                                  vendor applications, product submission, and notifications.
-                              </li>
-                          </ul>
+                                      <li>
+                                          <strong>Notifications:</strong>
+                                          Queued in-app notifications and Firebase
+                                          push notifications, including device-token
+                                          registration and management.
+                                      </li>
+
+                                      <li>
+                                          <strong>Customer REST API:</strong>
+                                          Authentication, profile management,
+                                          vendor applications, product submission,
+                                          and customer notifications.
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
 
                           <div class="commercehub-architecture">
-                              <span>BACKEND ARCHITECTURE</span>
+                              <span>BACKEND ARCHITECTURE & ENGINEERING</span>
+
                               <p>
-                                  Laravel Service Layer · Dependency Injection · Form Requests ·
-                                  API Resources · Eloquent ORM · Database Transactions ·
+                                  Laravel Service Layer · Dependency Injection ·
+                                  Form Requests · API Resources · Eloquent ORM ·
+                                  Database Transactions · Row-Level Locking ·
                                   Queue Jobs · Laravel Sanctum
                               </p>
                           </div>
 
                           <div class="tag-list">
-                              <span>Laravel</span>
                               <span>PHP</span>
+                              <span>Laravel</span>
                               <span>MySQL</span>
                               <span>Sanctum</span>
                               <span>Spatie</span>
@@ -315,6 +343,7 @@
 
                       </div>
                   </article>
+
 
                   <!-- 02 - GreatRead -->
                   <article class="project-card reveal">
